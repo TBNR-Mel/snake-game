@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="score">Score: 0</div>
+  <div id="level">Level: 1</div>
+  <canvas id="gameCanvas" width="400" height="400"></canvas>
+  <br>
+  <button id="startButton">Start Game</button>
+  <button id="pausePlayButton">Pause</button>
+  <button id="menuButton">Menu</button>
+  <button id="restartButton">Restart</button>
+  <div id="modalOverlay"></div>
+  <div id="levelModal">
+    <h2>Select Level</h2>
+    <div id="levelList"></div>
+  </div>
+  <div id="levelCompleteModal">
+    <h2 id="levelCompleteMessage"></h2>
+    <button id="replayButton">Replay Level</button>
+    <button id="nextLevelButton">Next Level</button>
+    <button id="levelSelectButton">Level Select</button>
+  </div>
+  <div id="menuModal">
+    <h2>Menu</h2>
+    <button id="settingsButton">Settings</button>
+    <button id="levelSelectButton">Level Select</button>
+    <button id="resetProgressButton">Reset Progress</button>
+    <button id="closeMenuButton">Close</button>
+  </div>
+  <div id="settingsModal">
+    <h2>Settings</h2>
+    <label><input type="checkbox" id="soundToggle"> Sound</label>
+    <br>
+    <button id="closeSettingsButton">Close</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
